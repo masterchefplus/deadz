@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36fe3a32.css",
+    "main.js": "/static/js/main.9e4ec520.js",
+    "static/media/banner2.png": "/static/media/banner2.37e7cf407f7fa2a50cd1.png",
+    "static/media/image2.png": "/static/media/image2.1d715ce84010cd901d51.png",
+    "static/media/img1.png": "/static/media/img1.e04c9044a38843d28e13.png",
+    "static/media/img2.png": "/static/media/img2.a48a622b541e5b6c77ef.png",
+    "static/media/img3.png": "/static/media/img3.b416886218cf75c89bfd.png",
+    "static/media/logo.png": "/static/media/logo.50e18611bf97349038f2.png",
+    "static/media/subset-Spongy-Solid.ttf": "/static/media/subset-Spongy-Solid.11a7cdb18e94eb404d7a.ttf",
+    "static/media/bg1.svg": "/static/media/bg1.462b6c8ee0ce9feb06fdddbb8cb8f0ca.svg",
+    "static/media/bg2.svg": "/static/media/bg2.9ca19253bb1986fb24729a87cceee3da.svg",
+    "static/media/subset-AvertaCY-Semibold.ttf": "/static/media/subset-AvertaCY-Semibold.d7880805aa7ffbd59b29.ttf",
+    "static/media/subset-PPPangramSansRounded-Regular.ttf": "/static/media/subset-PPPangramSansRounded-Regular.91fd4834a8660144212c.ttf",
+    "static/media/subset-PPPangramSansRounded-Bold.ttf": "/static/media/subset-PPPangramSansRounded-Bold.2c682094605e5681b169.ttf",
+    "static/media/subset-AvertaCY-Regular.ttf": "/static/media/subset-AvertaCY-Regular.3a64acd243453173028e.ttf",
+    "static/media/subset-AvertaCY-Bold.ttf": "/static/media/subset-AvertaCY-Bold.663b1edf51c73b3fc893.ttf",
+    "static/media/subset-PPPangramSansRounded-Regular.woff2": "/static/media/subset-PPPangramSansRounded-Regular.e3004b45510efba7b139.woff2",
+    "static/media/subset-PPPangramSansRounded-Bold.woff2": "/static/media/subset-PPPangramSansRounded-Bold.5f0cbc97640d3d958c9a.woff2",
+    "static/media/subset-AvertaCY-Semibold.woff2": "/static/media/subset-AvertaCY-Semibold.340fcf11d1f39a8ea89f.woff2",
+    "static/media/subset-AvertaCY-Regular.woff2": "/static/media/subset-AvertaCY-Regular.db139b64c22d0d91fad6.woff2",
+    "static/media/subset-Spongy-Solid.woff2": "/static/media/subset-Spongy-Solid.7cd039edcced22e1a737.woff2",
+    "static/media/subset-AvertaCY-Bold.woff2": "/static/media/subset-AvertaCY-Bold.834a46841c00c0a2fadd.woff2",
+    "static/media/bg.svg": "/static/media/bg.e26fa2dc5fa75597b9a3.svg",
+    "index.html": "/index.html",
+    "main.36fe3a32.css.map": "/static/css/main.36fe3a32.css.map",
+    "main.9e4ec520.js.map": "/static/js/main.9e4ec520.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36fe3a32.css",
+    "static/js/main.9e4ec520.js"
+  ]
+}
