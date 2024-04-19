@@ -7,7 +7,7 @@ import styles from "styles/components/Footer.module.scss"; // Component styles
  */
 const footerLinks: { icon: string; url: string | undefined }[] = [
   // Discord
-  { icon: "/icons/discord.svg", url: process.env.NEXT_PUBLIC_DISCORD },
+  // { icon: "/icons/discord.svg", url: process.env.NEXT_PUBLIC_DISCORD },
   // Twitter
   { icon: "/icons/twitter.svg", url: process.env.NEXT_PUBLIC_TWITTER },
   // Github

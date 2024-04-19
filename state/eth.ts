@@ -15,8 +15,8 @@ import type { Web3Provider } from "@ethersproject/providers";
 const networkId = process.env.NEXT_PUBLIC_RPC_NETWORK
   ? // Use network
     Number(process.env.NEXT_PUBLIC_RPC_NETWORK)
-  : // Else, default to Fantom
-    250;
+  : // Else, default to Rinkeby
+    11155111;
 
 // Onboard.js wallet providers
 const wallets: (WalletModule | WalletInitOptions)[] = [

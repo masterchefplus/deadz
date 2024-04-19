@@ -1,10 +1,8 @@
 import Link from "next/link"; // Dynamic routing
 import Image from "next/image"; // Images
 import { eth } from "state/eth"; // Global state
-import { useMemo, useState } from "react"; // State management
+import { useState } from "react"; // State management
 import styles from "styles/components/Header.module.scss"; // Component styles
-
-import { useConnectWallet } from "@web3-onboard/react";
 
 /**
  * Links to render in action menu
@@ -16,15 +14,15 @@ const actionMenuLinks: {
   url: string | undefined;
 }[] = [
   {
-    name: "About",
+    name: "Airdrop",
     icon: "/icons/info.svg",
     url: process.env.NEXT_PUBLIC_ARTICLE,
   },
-  {
-    name: "Discord",
-    icon: "/icons/discord.svg",
-    url: process.env.NEXT_PUBLIC_DISCORD,
-  },
+  // {
+    // name: "Discord",
+    // icon: "/icons/discord.svg",
+    // url: process.env.NEXT_PUBLIC_DISCORD,
+  // },
   {
     name: "Twitter",
     icon: "/icons/twitter.svg",
@@ -43,14 +41,10 @@ const threeDotsImage: string =
 
 export default function Header() {
   // Global state
-  // const { address, unlock }: { address: string | null; unlock: Function } = eth.useContainer();
+  const { address, unlock }: { address: string | null; unlock: Function } =
+    eth.useContainer();
   // Action menu open state
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
-  const address = useMemo(
-    () => wallet?.accounts[0].address,
-    [wallet?.accounts]
-  );
 
   return (
     <div className={styles.header}>
@@ -66,23 +60,13 @@ export default function Header() {
       {/* Auth + details */}
       <div className={styles.header__actions}>
         {/* Unlock button */}
-        {/* <button onClick={() => unlock()}>
+        <button onClick={() => unlock()}>
           {!address
-            ? "Connect Wallet"
-            : `${address.substr(0, 6)}...
+            ? // If not connected, render connect wallet
+              "Connect Wallet"
+            : // Else, render address
+              `${address.substr(0, 6)}...
                     ${address.slice(address.length - 4)}`}
-        </button> */}
-        <button
-          disabled={connecting}
-          onClick={() => (wallet ? disconnect(wallet) : connect())}
-        >
-          {connecting
-            ? "Connecting"
-            : wallet
-            ? `${address?.substr(0, 6)}...${address?.slice(
-                address?.length - 4
-              )}`
-            : "Connect"}
         </button>
 
         {/* Actions button */}
