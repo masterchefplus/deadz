@@ -21,7 +21,7 @@ export default function Home() {
       <div className={styles.home}>
         {/* Project logo */}
         <div>
-          <Image src="/logo.png" alt="Logo" width={250} height={250} priority />
+          <Image src="/4logo.png" alt="Logo" width={270} height={300} priority />
         </div>
 
         {/* Project introduction article, if it exists */}
@@ -43,13 +43,13 @@ export default function Home() {
         <p>{description}</p>
 
         {/* Claim button */}
-        {!address ? (
+			{/*  {!address ? (
           // If not authenticated, disabled
           <button disabled>Connect Wallet to Claim Tokens</button>
         ) : (
           // Else, reroute to /claim
           <button onClick={() => push("/claim")}>Claim Tokens</button>
-        )}
+        )} */}
       </div>
     </Layout>
   );

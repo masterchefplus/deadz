@@ -14,7 +14,7 @@ const actionMenuLinks: {
   url: string | undefined;
 }[] = [
   {
-    name: "Airdrop",
+    name: "App",
     icon: "/icons/info.svg",
     url: process.env.NEXT_PUBLIC_ARTICLE,
   },
